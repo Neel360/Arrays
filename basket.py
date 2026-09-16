@@ -33,3 +33,16 @@ print(f"Count of items with price 2.0: {count_of_items}")
 items_prices.reverse()
 print("Reversed prices of items in basket 1: ", items_prices)
 
+int_array = arr.array('i', [1, 2, 3, 4, 5])
+print(int_array)
+print(int_array[3:6])
+last_element = int_array.pop()
+print(int_array)
+
+try:
+    int_array.remove(10)
+except ValueError:
+    print("Value 10 not found in the array.")
+int_array[1] = -2
+print(int_array)
+print(len(int_array))
